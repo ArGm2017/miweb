@@ -34,7 +34,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Enviar Instrucciones a mi Correo para Recuperar mi Contraseña
+                                    Recuperar Contraseña
                                 </button>
                             </div>
                         </div>
