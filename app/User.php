@@ -9,8 +9,6 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    //Comentario de prueba.
-
     /**
      * The attributes that are mass assignable.
      *
