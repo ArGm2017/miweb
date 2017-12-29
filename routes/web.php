@@ -11,7 +11,7 @@
 |
  */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@getHome');
 
 /*Route::get('/login', function () {
 return view('auth.login');
