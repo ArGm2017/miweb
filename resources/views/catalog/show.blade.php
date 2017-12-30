@@ -32,6 +32,7 @@
             @endif
             </h5>
 
+        @if(Auth::user()->hasRole('admin'))
 
             @if ($pelicula->rented == 1)
 
@@ -66,7 +67,7 @@
                 <button type="submit" onclick="return confirm('¿Está seguro que desea eliminar esta película?')" class="btn btn-danger" style="display:inline">
                 Eliminar Película</button>
             </form>
-
+        @endif
 
             <a href="{{ action('CatalogController@getIndex') }}" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-menu-left" >
              </i>VOLVER AL LISTADO</a>
