@@ -24,6 +24,7 @@
                         Catálogo
                     </a>
                 </li>
+                @if(Auth::user()->hasRole('admin'))
                 <li{{ Request::is('catalog/create') ? ' class=active' : ''}}>
                     <a href="{{url('/catalog/create')}}">
                         <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
@@ -31,6 +32,8 @@
                     </a>
                 </li>
             </ul>
+            @endif
+
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
